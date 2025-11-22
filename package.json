@@ -1,6 +1,6 @@
 {
-  "name": "v8-profiler-next",
-  "version": "1.10.0",
+  "name": "v8-profiler-n-api",
+  "version": "1.10.1",
   "description": "node bindings for the v8 profiler",
   "main": "dispatch.js",
   "binary": {
@@ -8,7 +8,7 @@
     "module_path": "./build/binding/{configuration}/{node_abi}-{platform}-{arch}/",
     "remote_path": "./v{version}/",
     "package_name": "{module_name}-v{version}-{node_abi}-{platform}-{arch}.tar.gz",
-    "host": "https://github.com/hyj1991/v8-profiler-next/releases/download"
+    "host": "https://github.com/rchervot/v8-profiler-n-api/releases/download"
   },
   "scripts": {
     "install": "node scripts/install.js",
@@ -31,18 +31,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hyj1991/v8-profiler-next.git"
+    "url": "git+https://github.com/rchervot/v8-profiler-n-api.git"
   },
   "keywords": [
     "node",
     "v8-profiler"
   ],
-  "author": "https://github.com/hyj1991",
+  "author": "https://github.com/rchervot",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/hyj1991/v8-profiler-next/issues"
+    "url": "https://github.com/rchervot/v8-profiler-n-api/issues"
   },
-  "homepage": "https://github.com/hyj1991/v8-profiler-next#readme",
+  "homepage": "https://github.com/rchervot/v8-profiler-n-api#readme",
   "files": [
     "lib",
     "scripts",

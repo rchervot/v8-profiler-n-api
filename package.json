@@ -1,6 +1,6 @@
 {
   "name": "v8-profiler-n-api",
-  "version": "1.10.1",
+  "version": "1.11.0",
   "description": "node bindings for the v8 profiler",
   "main": "dispatch.js",
   "binary": {
@@ -54,8 +54,8 @@
     "README.md"
   ],
   "dependencies": {
-    "@xprofiler/node-pre-gyp": "^1.0.9",
-    "nan": "^2.18.0"
+    "@mapbox/node-pre-gyp": "^2.0.0",
+    "nan": "^2.23.1"
   },
   "devDependencies": {
     "chai": "^4.3.6",

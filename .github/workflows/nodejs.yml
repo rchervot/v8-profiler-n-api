@@ -12,18 +12,21 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        node-version: [ 12, 14, 16, 18, 20, 22, 24, 25 ]
+        node-version: [ 16, 18, 20, 22, 24, 25 ]
     steps:
     - name: Set up Python
-      uses: actions/setup-python@v4
+      uses: actions/setup-python@v6
       with:
-        python-version: '3.10'
+        python-version: '3.14'
+
+    - name: Install distutils compatibility
+      run: pip install setuptools
 
     - name: Checkout Git Source
       uses: actions/checkout@master
 
     - name: Setup Node.js
-      uses: actions/setup-node@v1
+      uses: actions/setup-node@v6
       with:
         node-version: ${{ matrix.node-version }}
 
@@ -37,18 +40,21 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        node-version: [ 12, 14, 16, 18, 20, 22, 24, 25 ]
+        node-version: [ 16, 18, 20, 22, 24, 25 ]
     steps:
     - name: Set up Python
-      uses: actions/setup-python@v4
+      uses: actions/setup-python@v6
       with:
-        python-version: '3.10'
+        python-version: '3.14'
+
+    - name: Install distutils compatibility
+      run: pip install setuptools
 
     - name: Checkout Git Source
       uses: actions/checkout@master
 
     - name: Setup Node.js
-      uses: actions/setup-node@v1
+      uses: actions/setup-node@v6
       with:
         node-version: ${{ matrix.node-version }}
 

@@ -3,7 +3,6 @@
 [![npm version](https://img.shields.io/npm/v/v8-profiler-n-api/latest.svg)](https://www.npmjs.com/package/v8-profiler-n-api)
 [![Package Quality](http://npm.packagequality.com/shield/v8-profiler-n-api.svg)](http://packagequality.com/#?package=v8-profiler-n-api)
 [![Linux/osx build status](https://github.com/rchervot/v8-profiler-n-api/workflows/Continuous%20integration/badge.svg?branch=master)](https://github.com/rchervot/v8-profiler-n-api/actions?query=branch%3Amaster)
-[![windows build status](https://ci.appveyor.com/api/projects/status/vp54r2t137iirntf?svg=true)](https://ci.appveyor.com/project/rchervot/v8-profiler-n-api)
 [![downloads info](https://img.shields.io/npm/dm/v8-profiler-n-api.svg)](https://www.npmjs.com/package/v8-profiler-n-api)
 [![license](https://img.shields.io/npm/l/v8-profiler-n-api.svg)](LICENSE)
 
@@ -16,8 +15,8 @@ v8-profiler-n-api provides [node](https://github.com/nodejs/node) bindings for t
 ## I. Quick Start
 
 * **Compatibility**
-  * **node version:** v4.x ~ v25.x
-  * **platform:** mac, linux, windows
+  * **node version:** v16.x ~ v25.x
+  * **platform:** mac, linux
 
 This module can also be used in `worker_threads`.
 

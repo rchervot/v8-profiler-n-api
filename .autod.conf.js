@@ -8,7 +8,7 @@ module.exports = {
   ],
   dep: [
     'nan',
-    '@xprofiler/node-pre-gyp',
+    '@mapbox/node-pre-gyp',
   ],
   devdep: [
     'autod',

@@ -38,7 +38,7 @@ jobs:
         run: npm run build   # or: node-gyp rebuild
 
       - name: Create prebuild (binary)
-        run: npx prebuildify --napi --target "node@$(node -p 'process.version.slice(1)')"
+        run: npx prebuildify --target "node@$(node -p 'process.version.slice(1)')"
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4

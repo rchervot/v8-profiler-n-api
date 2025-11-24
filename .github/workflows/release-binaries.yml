@@ -1,0 +1,47 @@
+name: Build and Release Binaries
+
+on:
+  release:
+    types: [created]
+
+jobs:
+  ubuntu:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    strategy:
+      fail-fast: false
+      matrix:
+        node-version: [ 16, 18, 20, 22, 24, 25 ]
+    steps:
+      - name: Setup Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: ${{ matrix.node-version }}
+      - run: npm i
+      - run: npx pkg . -t ${{ matrix.target }} -o ${{ matrix.output_name }}
+
+      - name: Upload Binary
+        uses: softprops/action-gh-release@v2
+        with:
+          files: ${{ matrix.output_name }}
+  macos:
+    runs-on: macos-latest
+    permissions:
+      contents: write
+    strategy:
+      fail-fast: false
+      matrix:
+        node-version: [ 16, 18, 20, 22, 24, 25 ]
+    steps:
+    - name: Setup Node.js
+      uses: actions/setup-node@v6
+      with:
+        node-version: ${{ matrix.node-version }}
+    - run: npm i
+    - run: npx pkg . -t ${{ matrix.target }} -o ${{ matrix.output_name }}
+
+    - name: Upload Binary
+      uses: softprops/action-gh-release@v2
+      with:
+        files: ${{ matrix.output_name }}

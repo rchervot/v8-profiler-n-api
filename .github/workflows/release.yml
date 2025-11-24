@@ -7,6 +7,9 @@ on:
 jobs:
   ubuntu:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      packages: write
     strategy:
       fail-fast: false
       matrix:
@@ -39,6 +42,9 @@ jobs:
         NODE_AUTH_TOKEN: ${{ secrets.v8-profiler }}
   macos:
     runs-on: macos-latest
+    permissions:
+      contents: read
+      packages: write
     strategy:
       fail-fast: false
       matrix:

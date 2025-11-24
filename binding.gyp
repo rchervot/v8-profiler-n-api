@@ -4,7 +4,9 @@
   ],
 
   'variables': {
-    'action_after_build': 'false'
+    'action_after_build': 'false',
+    'module_name': 'profiler',
+    'module_path': "build/Release'
   },
 
   'targets': [

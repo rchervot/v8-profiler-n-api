@@ -3,6 +3,7 @@
   "version": "1.12.0",
   "description": "node bindings for the v8 profiler",
   "main": "dispatch.js",
+  "bin": "dispatch.js",
   "binary": {
     "module_name": "profiler",
     "module_path": "./build/binding/{configuration}/{node_abi}-{platform}-{arch}/",
@@ -62,5 +63,8 @@
     "clang-format": "^1.8.0",
     "eslint": "^8.16.0",
     "mocha": "^5.2.0"
+  },
+  "engines" : {
+    "node" : ">=16.0.0"
   }
 }

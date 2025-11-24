@@ -24,7 +24,7 @@ jobs:
         run: pip install setuptools
 
       - name: Checkout Git Source
-        uses: actions/checkout@v6e
+        uses: actions/checkout@v6
 
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v6

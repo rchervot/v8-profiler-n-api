@@ -39,7 +39,7 @@ jobs:
     - name: Publish package
       run: npm publish
       env:
-        NODE_AUTH_TOKEN: ${{ secrets.v8-profiler }}
+        NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   macos:
     runs-on: macos-latest
     permissions:
@@ -74,4 +74,4 @@ jobs:
     - name: Publish package
       run: npm publish
       env:
-        NODE_AUTH_TOKEN: ${{ secrets.v8-profiler }}
+        NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
